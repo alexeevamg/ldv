@@ -1,0 +1,26 @@
+/* Common styles for both modal components */
+.swiper-slide .h-press_modal-wrapper .h-press_modal-right,
+.swiper-slide .h-press_modal-wrapper .h-press_slider-component {
+  transition: transform 0.5s;
+  will-change: transform;
+}
+
+/* Initial styles for non-active slides */
+.swiper-slide .h-press_modal-wrapper .h-press_modal-right {
+  transform: translate3d(100%, 0, 0);
+}
+
+.swiper-slide .h-press_modal-wrapper .h-press_slider-component {
+  transform: translate3d(101vw, 0, 0);
+}
+
+/* Styles for active slides */
+.swiper-slide.swiper-slide-active .h-press_modal-wrapper .h-press_modal-right,
+.swiper-slide.swiper-slide-duplicate-active .h-press_modal-wrapper .h-press_modal-right {
+  transform: translate3d(0, 0, 0);
+}
+
+.swiper-slide.swiper-slide-active .h-press_modal-wrapper .h-press_slider-component,
+.swiper-slide.swiper-slide-duplicate-active .h-press_modal-wrapper .h-press_slider-component {
+  transform: translate3d(0, 0, 0);
+}
